@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Amigo Secreto</title>
+    <meta name="robots" content="noindex">
+
+    <style class="INLINE_PEN_STYLESHEET_ID">
+    @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 700 1em "News Cycle", sans-serif;
+  letter-spacing: .15em;
+  color: #ff6;
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+}
+
+.starwars section {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 1;
+}
+.starwars .start {
+  font-size: 500%;
+  width: 14em;
+  margin: -4em 0 0 -7em;
+  text-align: center;
+  cursor: pointer;
+}
+.starwars .start span {
+  color: #4bd5ee;
+}
+.starwars .intro {
+  width: 80%;
+  margin: 0 0 0 -40%;
+  font-size: 500%;
+  font-weight: 400;
+  color: #4bd5ee;
+  opacity: 0;
+  text-align: center;
+  -webkit-animation: intro 6s ease-out 1s;
+          animation: intro 6s ease-out 1s;
+}
+.starwars .logo {
+  opacity: 0;
+  -webkit-animation: logo 9s ease-out 9s;
+          animation: logo 9s ease-out 9s;
+}
+.starwars .logo svg {
+  width: inherit;
+}
+.starwars .titles {
+  width: 80%;
+  margin: 0 0 0 -40%;
+  top: auto;
+  bottom: 0;
+  height: 50em;
+  font-size: 500%;
+  text-align: center;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(500px) rotateX(25deg);
+}
+.starwars .titles > div {
+  position: relative;
+  top: 100%;
+  -webkit-animation: titles 70s linear 13s;
+          animation: titles 70s linear 13s;
+}
+.starwars .titles > div > p {
+  margin: 1.35em 0 1.85em 0;
+  line-height: 1.35em;
+  text-align: justify;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    width: 18em;
+    margin: -9em 0 0 -9em;
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+    margin: -9em 0 0 -9em;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+    width: 18em;
+    margin: -9em 0 0 -9em;
+  }
+}
+@keyframes logo {
+  0% {
+    width: 18em;
+    margin: -9em 0 0 -9em;
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+    margin: -9em 0 0 -9em;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+    width: 18em;
+    margin: -9em 0 0 -9em;
+  }
+}
+@-webkit-keyframes titles {
+  0% {
+    top: 100%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: -150%;
+    opacity: 0;
+  }
+}
+@keyframes titles {
+  0% {
+    top: 100%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: -150%;
+    opacity: 0;
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+<article class="starwars">
+    <audio preload="auto">
+        <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg"
+                type="audio/ogg"/>
+        <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3"
+                type="audio/mpeg"/>
+    </audio>
+
+    <section class="start">
+        <p>
+            Start
+        </p>
+    </section>
+
+    <div class="animation">
+
+        <section class="intro">
+           E o meu amigo secreto,<br> é...................
+        </section>
+
+        <section class="titles">
+            <div contenteditable="true" spellcheck="false">
+                <p>
+                    Em uma galaxia não tão distante
+                    conhecida como Guarulhos, um homem,
+                    uma máquina...
+                </p>
+
+                <p>
+                    Especialista em tecidos,
+                    carpinteiro de primeira,
+                    admirador de um bom futebol e
+                    de um gosto músical indiscutível
+                </p>
+
+                <p>
+                    Maridão,
+                    tio exemplar,
+                    pai do amor da minha vida
+                    Deborah e do meu chará, cunhado e
+                    investidor Lucas.
+                </p>
+                <p>
+                    Esse é o Mauro!
+                </p>
+                <p>
+                    Espero um dia ser um pai
+                    para o seu neto e
+                    marido para sua filha
+                    tão bom quanto o senhor é.
+                </p>
+                <p>
+                    Obrigado por cuidar de mim.
+                </p>
+                <p>
+                    E desculpa por vomitar no seu carro.
+                </p>
+
+                <p>
+                    <img src="assets/1.jpg">
+                </p>
+                <p>
+                    <img src="assets/2.jpg">
+                </p>
+                <p>
+                    <img src="assets/3.jpg">
+                </p>
+                <p>
+                    <img src="assets/4.jpg">
+                </p>
+                <p>
+                    <img src="assets/5.jpg">
+                </p>
+                <p>
+                    <img src="assets/6.jpg">
+                </p>
+                <p>
+                    Fim
+                </p>
+            </div>
+        </section>
+
+        <section class="logo">
+           <img src="assets/cavalo.png">
+        </section>
+    </div>
+</article>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+/*
+ * Star Wars opening crawl from 1977
+ *
+ * I freaking love Star Wars, but could not find
+ * a web version of the original opening crawl from 1977.
+ * So I created this one.
+ *
+ * I wrote an article where I explain how this works:
+ * http://timpietrusky.com/star-wars-opening-crawl-from-1977
+ *
+ * Watch the Start Wars opening crawl on YouTube.
+ * https://www.youtube.com/watch?v=7jK-jZo6xjY
+ *
+ * Stuff I used:
+ * - CSS (animation, transform)
+ * - HTML audio (the opening theme)
+ * - SVG (the Star Wars logo from wikimedia.org)
+ *   http://commons.wikimedia.org/wiki/File:Star_Wars_Logo.svg
+ * - JavaScript (to sync the animation/audio)
+ *
+ * Thanks to Craig Buckler for his amazing article
+ * which helped me to create this remake of the Star Wars opening crawl.
+ * http://www.sitepoint.com/css3-starwars-scrolling-text/
+ *
+ * Sound copyright by The Walt Disney Company.
+ *
+ *
+ * 2013 by Tim Pietrusky
+ * timpietrusky.com
+ *
+ */
+StarWars = (function() {
+
+  /*
+   * Constructor
+   */
+  function StarWars(args) {
+    // Context wrapper
+    this.el = $(args.el);
+
+    // Audio to play the opening crawl
+    this.audio = this.el.find('audio').get(0);
+
+    // Start the animation
+    this.start = this.el.find('.start');
+
+    // The animation wrapper
+    this.animation = this.el.find('.animation');
+
+    // Remove animation and shows the start screen
+    this.reset();
+
+    // Start the animation on click
+    this.start.bind('click', $.proxy(function() {
+      this.start.hide();
+      this.audio.play();
+      this.el.append(this.animation);
+    }, this));
+
+    // Reset the animation and shows the start screen
+    $(this.audio).bind('ended', $.proxy(function() {
+      this.audio.currentTime = 0;
+      this.reset();
+    }, this));
+  }
+
+  /*
+   * Resets the animation and shows the start screen.
+   */
+  StarWars.prototype.reset = function() {
+    this.start.show();
+    this.cloned = this.animation.clone(true);
+    this.animation.remove();
+    this.animation = this.cloned;
+  };
+
+  return StarWars;
+})();
+
+new StarWars({
+  el : '.starwars'
+});
+</script>
+</body>
+
+</html>
